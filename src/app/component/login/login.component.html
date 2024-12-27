@@ -1,0 +1,18 @@
+
+<h1>Login from here</h1>
+<form action="" [formGroup]='loginform' (ngSubmit)="proceedLogin()">
+
+    <label for="email">Email:</label>
+    <input type="email" formControlName="userName" required />
+    <br>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" formControlName="password"  required />
+
+    <button type="submit">Login</button>
+
+</form>
+<p>New user</p>
+<a href="/register">new user?</a>
+
+ 

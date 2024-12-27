@@ -1,0 +1,43 @@
+<form action="" [formGroup]='registerForm' (ngSubmit)="proceedRegister()">
+
+    <h1>Welcome to user registration</h1>
+
+    <label for="first">Name:</label>
+    <input type="text" formControlName="name" required />
+    <br>
+    <br>
+   
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" formControlName="email" required />
+    <br>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" formControlName="password"  required />
+
+    <label for="repassword">Re-type Password:</label>
+    <input type="password" formControlName="conpassword" required />
+    <br>
+    <br>
+    <label for="mobile">Phone:</label>
+    <input type="text" formControlName="phone" maxlength="10" required />
+    <br>
+    <br>
+    <label for="gender">Gender:</label>
+    <select formControlName="gender" required>
+        <option value="male">
+            Male
+        </option>
+        <option value="female">
+            Female
+        </option>
+        <option value="other">
+            Other
+        </option>
+    </select>
+
+    <button type="submit">
+        Submit
+    </button>
+</form>
